@@ -41,7 +41,7 @@ List writeSvmLight(Eigen::MappedSparseMatrix<double> inputMatrix,
     for (int k=0; k < Y.outerSize(); ++k) { // foreach row
         out << labels[k];
         for (SpRMat::InnerIterator it(Y,k); it; ++it) { // foreach col
-            out << " " << it.col() << ":" << it.value();
+            out << " " << it.col()+1 << ":" << it.value();
         }
         out << std::endl;
     }

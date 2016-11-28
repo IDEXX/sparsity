@@ -10,7 +10,9 @@ You would take hours if not days with regular packages for such sizes!
 ## Installation
 
 ```r
-devtools:::install_github("Laurae2/sparsity")
+devtools:::install_github("IDEXX/sparsity")
 ```
 
-Original source (felixr/sparsity) does not compile properly! Hence the reason of this repository for those who needs only the SVMLight format >_>
+Original source (felixr/sparsity) does not compile properly and Laurae2/sparsity uses zero based
+column numbering which is broken in H2O (see https://0xdata.atlassian.net/browse/PUBDEV-3734)!
+Hence the reason of this repository for those who needs only the SVMLight format >_>
